@@ -5,15 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        head
-        {
-
+        header {
             
+            padding: 3%;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+        .text_area {
+            width: 70%;
+            
+        }
+        .text_area h1 {
+            font-size: x-large;
+            font-style: bold;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .text_area p {
+            font-size: medium;
+            padding: 1em;
+            line-height: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 0.03em;
+        }
+        .photo_area {
+            width: 30%;
+            
+        }
+        .photo_area .flex-container h2 {
+            font-size: medium;
+            padding-left: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .photo_area .flex-container a {
+            text-align: left;
+            text-decoration: none;
+            padding-left: 1em;
+            padding-bottom: 0.5em;
+            color: #146a99;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .photo_area .flex-container a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            padding: 3%;
+        }
+        .photo_area img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 1em;
+        }
+        #jump_link_bar {
+            background-color: #CDCDCB;
         }
     </style>
 </head>
 
 <body>
-    
+    <header>
+        Header will be placed here
+    </header>
+
+    <div class="flex-container">
+        <div class="text_area">
+            <h1 id="genel_bilgiler">
+                &nbsp;&nbsp;&nbsp;&nbsp;Genel bilgiler
+            </h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;IEEE (Açılımı: Institute of Electrical and Electronics Engineers), elektrik, elektronik, bilgisayar ve otomasyon gibi mühendislik alanlarının gelişimine katkı sağlayan, kâr amacı gütmeyen uluslararası bir teknik organizasyondur. 1884 yılında, Alexander Graham Bell ve Thomas Edison gibi öncü bilim insanları tarafından kurulmuştur.</br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Aralık 2021 itibarıyla, 160 ülkede 409.000'den fazla üyesi (125.000'den fazlası öğrenci) ve 39 teknik komitesi ile 3.565'ten fazla öğrenci kolu bulunmaktadır. Dünyada elektrik ve elektronik mühendisliği, bilgisayar ve otomasyon konularında yayınlanan makalelerin %30'unu IEEE yayınlamaktadır. Ayrıca, IEEE Xplore kütüphanesinde yaklaşık 5 milyon belge ve 200 düzenli bilimsel yayın ile 1.800'den fazla konferans yer almaktadır. Türkiye'nin de dahil olduğu 8. Bölge'de ise 26.000 üyesi, bunlardan 5.000'i öğrenci üyedir.
+            </p>
+            <h1 id="ieee_nasıl_kuruldu">
+                &nbsp;&nbsp;&nbsp;&nbsp;IEEE Nasıl Kuruldu?
+            </h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;IEEE, 1884 yılında Amerikan Elektrik Mühendisleri Enstitüsü (AIEE) olarak kuruldu ve 1912'de Radyo Mühendisleri Enstitüsü (IRE) ile rekabet etmeye başladı. 1963 yılında AIEE ve IRE'nin birleşmesiyle IEEE (Institute of Electrical and Electronics Engineers) olarak yeniden yapılandırıldı. 
+            </p>
+        </div>
+        <div class="photo_area">
+            <!-- Jump Link Bar -->
+            <div class="flex-container" style="flex-direction: column; margin-bottom: 1em;" id="jump_link_bar">
+                <h2>
+                    Bu Sayfada:
+                </h2>
+                <a href="#genel_bilgiler">>Genel Bilgiler</a>
+                <a href="#ieee_nasıl_kuruldu">>IEEE Nasıl Kuruldu?</a>
+            </div>
+            <img src="image.png">
+        </div>
+    </div>
+
+    <footer>
+        Footer will be placed here
+    </footer>
 </body>
 </html>
